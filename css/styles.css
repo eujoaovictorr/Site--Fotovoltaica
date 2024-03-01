@@ -1,0 +1,336 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #161623;
+    --color-aqua: aqua;
+    --text-align: center;
+    --align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+}
+
+
+header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    position: fixed;
+
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+
+    align-items: var(--align-items);
+    text-align: var(--text-align);
+    padding: 1.2em;
+    margin-top: -30px;
+}
+
+
+span {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/*---------- links ----------*/
+
+nav.nav-bar {
+    display: flex;
+    gap: 4em;
+
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: var(--align-items);
+}
+
+nav.nav-bar a {
+    position: relative;
+    letter-spacing: 0.6px;
+    color: var(--color-white);
+}
+
+nav.nav-bar a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-aqua);
+
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s all;
+}
+
+nav.nav-bar a:hover {
+    color: var(--color-aqua);
+    transition: 0.7s ease all;
+}
+
+nav.nav-bar a:hover::after {
+    width: 100%;
+}
+
+/*---------- página index -----------*/
+
+/*---------- primeira seção ----------*/
+
+div.secao-I {
+    display: flex;
+    justify-content: space-around;
+    align-items: var(--align-items);
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+img {
+    width: 650px;
+    height: 650px;
+    margin-top: 130px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px #000;
+}
+
+div > p {
+    margin: -235px 50px 0 50px;
+    font-size: 21px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+
+/*---------- segunda seção ----------*/
+
+div.secao-II { 
+    margin-left: 45rem;
+    margin-top: -320px;
+
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+div.secao-II > h2 {
+    margin-top: -10px;
+    text-align: var(--text-align);
+    padding-bottom: 2.5em;
+    font-size: 40px;
+    text-decoration: underline 5px #fff;
+}
+
+div.secao-II > ul {
+    margin-top: -1.5rem;
+    padding: 50px 35px 0 35px;
+    line-height: 25px;
+
+    font-size: 21px;
+}
+
+
+/*---------- terceira seção ----------*/
+
+div.secao-III {
+    margin-top: 25rem;
+    margin-bottom: 200px;
+
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+div.secao-III > h2 {
+    margin-left: 670px;
+    font-size: 40px;
+    font-weight: 600;
+
+    text-decoration: underline 5px #fff;
+    text-transform: capitalize;
+}
+
+div.secao-III img {
+    height: 430px;
+    margin: 50px;
+
+    float: left;
+}
+
+div.secao-III > p {
+    margin-top: 120px;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+
+    font-size: 21px;
+}
+
+
+/*---------- Página Atomo De Silicio & Semicondutor & Faixa de Condução ----------*/
+
+
+/*---------- Átomo de Silício ----------*/
+
+div.secao-atomo {
+    display: flex;
+    justify-content: space-around;
+    align-items: var(--align-items);
+
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+
+img#imagem-atomo {
+    margin-top: 170px;
+
+    width: 700px;
+    height: 550px;
+}
+
+div.secao-atomo h2 {
+    display: inline-block;
+    margin-top: -20px;
+}
+
+div#paragrafos-atomo {
+    display: inline-block;
+    margin-top: 790px;
+
+    letter-spacing: 2px;
+}
+
+
+/*---------- Semicondutor ----------*/
+
+
+div.secao-semicondutor {
+    margin-top: 15em;
+
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+.h2-semicondutor {
+    font-size: 35px;
+    font-weight: 600;
+
+    text-decoration: underline 5px #fff;
+    text-transform: capitalize;
+}
+
+div.secao-semicondutor img {
+    color: whitesmoke;
+    height: 540px;
+    margin: 260px 50px 0 50px;
+
+    float: left;
+}
+
+div.secao-semicondutor > p {
+    padding: 0 20px 0 20px;
+    margin-top: 280px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+
+/*---------- Faixa de Condução ----------*/
+
+div.secao-faixa-de-conducao {
+    margin-top: 25rem;
+    margin-bottom: 200px;
+
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+div.secao-faixa-de-conducao > h2 {
+    margin-top: 4em;
+    margin-bottom: 220px;
+    font-size: 45px;
+    font-weight: 600;
+
+    text-decoration: underline 5px #fff;
+    text-transform: capitalize;
+}
+
+div.secao-faixa-de-conducao img {
+    width: 650px;
+    height: 500px;
+
+    margin: 0 50px 100px 50px;
+    box-shadow: 5px 5px 5px 5px #000;
+    float: left;
+}
+
+div.secao-faixa-de-conducao > p {
+    margin-top: 17em;
+    margin-bottom: 45px;
+    letter-spacing: 3px;
+}
+
+/*---------- Página Eficiência & Absorção ----------*/
+
+/*---------- Eficiência ----------*/
+
+div.secao-eficiencia {
+    margin-top: 30px;
+    margin-left: 45px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: var(--align-items);
+}
+
+div#paragrafos-eficiencia {
+    margin-top: 400px;
+}
+
+/*---------- Absorção ----------*/
+
+div.secao-absorcao {
+    margin-top: 20rem;
+    margin-bottom: 200px;
+
+    text-align: var(--text-align);
+    align-items: var(--align-items);
+}
+
+div.secao-absorcao > h2 {
+    margin-bottom: 100px;
+    font-size: 45px;
+    font-weight: 600;
+
+    text-decoration: underline 5px #fff;
+    text-transform: capitalize;
+}
+
+div.secao-absorcao img {
+    height: 430px;
+    margin: 50px;
+
+    float: left;
+}
+
+div.secao-absorcao > p {
+    margin-top: 270px;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+    
+    font-size: 21px;
+}
